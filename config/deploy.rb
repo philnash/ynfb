@@ -36,6 +36,8 @@ task :before_symlink do
   end
   shared_dirs = ['log']
   shared_dirs.each{|p| use_shared_dir p }
+  
+  run "#{release_path}/bin/thor merb:gem:redeploy"
 end
 
 namespace :deploy do   

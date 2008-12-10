@@ -11,6 +11,12 @@ $BUNDLE = true
 Gem.path.unshift(gems_dir)
  
 require 'merb-core'
+
+class Time
+  def to_date
+    Date.parse(self.to_formatted_s(:db))
+  end
+end
  
 Merb::Config.setup(:merb_root   => File.expand_path(File.dirname(__FILE__)),
                    :environment => ENV['RACK_ENV'])
