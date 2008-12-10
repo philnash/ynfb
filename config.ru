@@ -1,6 +1,6 @@
 # config.ru
 
-ENV['GEM_PATH'] = '/home/nashville/.gems/' # your local gem home
+ENV['GEM_PATH'] = '/home/pinstaller/.gems/' # your local gem home
 
 require 'rubygems'
  

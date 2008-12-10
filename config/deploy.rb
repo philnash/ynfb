@@ -38,6 +38,9 @@ task :before_symlink do
   shared_dirs.each{|p| use_shared_dir p }
 end
 
-task :restart do
-  run "touch #{release_path}/tmp/restart.txt"
+namespace :deploy do   
+  desc "Restart"  
+  task :restart do  
+    run "touch #{release_path}/tmp/restart.txt" 
+  end  
 end
