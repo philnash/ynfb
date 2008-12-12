@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://blog.evanweaver.com/pages/code#cgi_multipart_eof_fix}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{mongrel}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{Fix an exploitable bug in CGI multipart parsing.}
   s.test_files = ["test/test_cgi_multipart_eof_fix.rb"]
 

@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.requirements = ["A POSIX environment and a compiler for your language."]
   s.rubyforge_project = %q{rubyinline}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{Inline allows you to write foreign code within your ruby code}
   s.test_files = ["test/test_inline.rb"]
 

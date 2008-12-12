@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{mongrel}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{A plugin system based on rubygems that uses dependencies only}
   s.test_files = ["test/test_plugins.rb"]
 

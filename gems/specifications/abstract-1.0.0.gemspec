@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://rubyforge.org/projects/abstract}
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new("> 0.0.0")
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{a library which enable you to define abstract method in Ruby}
   s.test_files = ["test/test.rb"]
 

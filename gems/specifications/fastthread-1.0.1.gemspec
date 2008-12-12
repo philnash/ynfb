@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{}
   s.require_paths = ["lib", "ext"]
   s.rubyforge_project = %q{mongrel}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{Optimized replacement for thread.rb primitives}
   s.test_files = ["test/test_all.rb"]
 

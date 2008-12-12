@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--title", "JSON -- A JSON implemention", "--main", "JSON", "--line-numbers"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{json}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{A JSON implementation in Ruby}
   s.test_files = ["tests/runner.rb"]
 

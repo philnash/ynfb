@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new("> 0.0.0")
   s.rubyforge_project = %q{mime-types}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{Manages a MIME Content-Type that will return the Content-Type for a given filename.}
   s.test_files = ["tests/testall.rb"]
 

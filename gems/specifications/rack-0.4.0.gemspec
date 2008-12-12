@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://rack.rubyforge.org}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{rack}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{a modular Ruby webserver interface}
   s.test_files = ["test/spec_rack_auth_basic.rb", "test/spec_rack_auth_digest.rb", "test/spec_rack_auth_openid.rb", "test/spec_rack_builder.rb", "test/spec_rack_camping.rb", "test/spec_rack_cascade.rb", "test/spec_rack_cgi.rb", "test/spec_rack_commonlogger.rb", "test/spec_rack_deflater.rb", "test/spec_rack_directory.rb", "test/spec_rack_fastcgi.rb", "test/spec_rack_file.rb", "test/spec_rack_handler.rb", "test/spec_rack_lint.rb", "test/spec_rack_lobster.rb", "test/spec_rack_mock.rb", "test/spec_rack_mongrel.rb", "test/spec_rack_recursive.rb", "test/spec_rack_request.rb", "test/spec_rack_response.rb", "test/spec_rack_session_cookie.rb", "test/spec_rack_session_memcache.rb", "test/spec_rack_session_pool.rb", "test/spec_rack_showexceptions.rb", "test/spec_rack_showstatus.rb", "test/spec_rack_static.rb", "test/spec_rack_urlmap.rb", "test/spec_rack_utils.rb", "test/spec_rack_webrick.rb"]
 

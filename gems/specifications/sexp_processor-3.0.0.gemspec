@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{parsetree}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{FIX (describe your package)}
   s.test_files = ["test/test_composite_sexp_processor.rb", "test/test_environment.rb", "test/test_sexp.rb", "test/test_sexp_processor.rb"]
 

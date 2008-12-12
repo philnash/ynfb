@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://yehudakatz.com}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{thor}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{A gem that maps options to a class}
 
   if s.respond_to? :specification_version then

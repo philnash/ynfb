@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{zentest}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{ZenTest provides 4 different tools and 1 library: zentest, unit_diff, autotest, multiruby, and Test::Rails}
   s.test_files = ["test/test_autotest.rb", "test/test_help.rb", "test/test_rails_autotest.rb", "test/test_rails_controller_test_case.rb", "test/test_rails_helper_test_case.rb", "test/test_rails_view_test_case.rb", "test/test_unit_diff.rb", "test/test_zentest.rb", "test/test_zentest_assertions.rb", "test/test_zentest_mapping.rb"]
 

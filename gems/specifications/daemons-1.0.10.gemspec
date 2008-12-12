@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://daemons.rubyforge.org}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{daemons}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{A toolkit to create and control daemons in different ways}
 
   if s.respond_to? :specification_version then

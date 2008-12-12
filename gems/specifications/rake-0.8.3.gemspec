@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--line-numbers", "--inline-source", "--main", "README", "--title", "Rake -- Ruby Make"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{rake}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{Ruby based make-like utility.}
 
   if s.respond_to? :specification_version then

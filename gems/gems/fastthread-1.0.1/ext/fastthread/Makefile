@@ -88,8 +88,8 @@ EXTSTATIC =
 STATIC_LIB = 
 
 RUBYCOMMONDIR = $(sitedir)$(target_prefix)
-RUBYLIBDIR = /Users/phil/Projects/last/gems/gems/fastthread-1.0.1/lib$(target_prefix)
-RUBYARCHDIR = /Users/phil/Projects/last/gems/gems/fastthread-1.0.1/lib$(target_prefix)
+RUBYLIBDIR = /Users/phil/Projects/ynfb/gems/gems/fastthread-1.0.1/lib$(target_prefix)
+RUBYARCHDIR = /Users/phil/Projects/ynfb/gems/gems/fastthread-1.0.1/lib$(target_prefix)
 
 TARGET_SO     = $(DLLIB)
 CLEANLIBS     = $(TARGET).bundle $(TARGET).il? $(TARGET).tds $(TARGET).map

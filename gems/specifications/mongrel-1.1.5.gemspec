@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib", "ext"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.4")
   s.rubyforge_project = %q{mongrel}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{A small fast HTTP library and server that runs Rails, Camping, Nitro and Iowa apps.}
   s.test_files = ["test/test_cgi_wrapper.rb", "test/test_command.rb", "test/test_conditional.rb", "test/test_configurator.rb", "test/test_debug.rb", "test/test_handlers.rb", "test/test_http11.rb", "test/test_redirect_handler.rb", "test/test_request_progress.rb", "test/test_response.rb", "test/test_stats.rb", "test/test_uriclassifier.rb", "test/test_ws.rb"]
 

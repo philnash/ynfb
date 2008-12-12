@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{seattlerb}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{ruby2ruby provides a means of generating pure ruby code easily from ParseTree's Sexps}
   s.test_files = ["test/test_ruby2ruby.rb"]
 

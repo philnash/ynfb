@@ -37,12 +37,20 @@ task :before_symlink do
   shared_dirs = ['log']
   shared_dirs.each{|p| use_shared_dir p }
   
-  run "#{release_path}/bin/thor merb:gem:redeploy"
 end
+
+
 
 namespace :deploy do   
   desc "Restart"  
   task :restart do  
-    run "touch #{release_path}/tmp/restart.txt" 
+    run "touch #{latest_release}/tmp/restart.txt" 
   end  
+
+  desc "recompile native gems"
+  task :native_gems do
+    run "cd #{latest_release}; bin/thor merb:gem:redeploy"
+  end
 end
+
+after "deploy:update_code", "deploy:native_gems"

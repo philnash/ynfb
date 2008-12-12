@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://mailfactory.rubyforge.org}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{mailfactory}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{MailFactory is a pure-ruby MIME mail generator}
   s.test_files = ["./tests/test_mailfactory.rb"]
 
