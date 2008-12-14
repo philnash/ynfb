@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  font-size: 62.5%;
+  font-family: "Arial Rounded MT Bold";
+  height: 100%;
+  background: #eee;
+  color: #333;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: #fc1535;
+}
+#wrapper{
+  width: 550px;
+  margin: 0 auto;
+  background: #fff;
+  height: 100%;
+  border-right: 2px solid #666;
+  border-left: 2px solid #666;
+}
+
+div#header{
+  width: 100% auto;
+  background: #fff;
+  padding: 10px;
+}
+
+h1 a{
+  display: block;
+  background: url(../images/ynfb-logo-text-white.gif) no-repeat 0 45px;
+  width: 500px;
+  height: 140px;
+  font-size: 4em;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  text-decoration: none;
+  color: #444;
+}
+div#intro{
+  padding: 0 0 0 30px;
+  margin-bottom: 4em;
+}
+div#intro p{
+  width: 500px;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  margin-bottom: 1em;
+}
+div#intro p span{
+  display: block;
+  font-size: 0.65em;
+}
+
+form{
+  width: 500px;
+  margin: 0 auto;
+  margin-right: 20px;
+}
+form label{
+  float: left;
+  clear: both;
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+form input{
+  float: left;
+  font-size: 3em;
+  width: 330px;
+  font-family: "Arial Rounded MT Bold";
+}
+form input#submit{
+  float: left;
+  width: 140px;
+  background: #666;
+  border: none;
+  color: #fff;
+  margin-left: 20px;
+  -webkit-border-radius: 5px;
+}
+form input#submit:hover{
+  background: #fc1535;
+  cursor: pointer;
+}
+form input#submit:actve{
+  padding-top: 10px;
+}
+p#asterisk{
+  padding: 0 0 0 30px;
+  margin-top: 20px;
+  font-size: 1.125em;
+}
+p#band{
+  font-size: 6em;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+p#drumroll{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+p.excite{
+  padding: 0 0 0 30px;
+  font-size: 2.5em;
+  line-height: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+p#again{
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.5em;
+}

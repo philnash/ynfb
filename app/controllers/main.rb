@@ -9,7 +9,7 @@ class Main < Application
     @neighbours = @user.neighbours(:limit => 20)
     @all_artists = []
     @neighbours.each do |n|
-      @all_artists << n.top_artists
+      @all_artists << n.top_artists(:period => '3month')
     end
     @all_artists.flatten!
     @the_comparer = {}
@@ -27,6 +27,7 @@ class Main < Application
       # puts  Scrobbler2::Artist.new(k)
       unless library.include? k
         @the_band = Scrobbler2::Artist.new(k)
+        @count = v
         break
       end
     end
