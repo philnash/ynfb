@@ -2,13 +2,27 @@
 <h2>Neighbours</h2>
 <ul>
 <% @neighbours.each do |n| %>
-	<li><%= n.username %></li>
+	<li><%= n.username %> - <%= n.top_artists[0].name%> - <%= n.top_artists[1].name%></li>
 <% end %>
 </ul>
 
 <h2>Library</h2>
 <ol>
 	<% @user.library.each do |artist| %>
+		<li><%= artist.name %></li>
+	<% end %>
+</ol>
+
+<h2>the comparer</h2>
+<ul>
+	<% @the_comparer.each do |k,v| %>
+		<li><%= k %> - <%= v %></li>
+	<% end %>
+</ul>
+
+<h2>All artists</h2>
+<ol>
+	<% @all_artists.each do |artist| %>
 		<li><%= artist.name %></li>
 	<% end %>
 </ol>

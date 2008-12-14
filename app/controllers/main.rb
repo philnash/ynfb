@@ -2,8 +2,6 @@ class Main < Application
   
   require 'scrobbler2'
 
-  # ...and remember, everything returned from an action
-  # goes to the client...
   def index
     render
   end
@@ -12,9 +10,18 @@ class Main < Application
     @user = Scrobbler2::User.new(params[:username])
     @user.library
     @neighbours = @user.neighbours(:limit => 20)
-    unless @neighbours.any?
+    @all_artists = []
       @neighbours.each do |n|
-        @neighbours.top_artists
+        @all_artists << @neighbours.top_artists
+      end
+    Merb.logger.info("================hello===============")
+    @all_artists.flatten!
+    @the_comparer = {}
+    @all_artists.each do |a|
+      if @the_comparer.has_key? a.name
+        @the_comparer[a.name] += 1
+      else
+        @the_comparer[a.name] = 1
       end
     end
     render
