@@ -48,16 +48,15 @@ blockquote, q {
 html{
   height: 100%;
 }
-
 body{
   font-size: 62.5%;
   font-family: "Arial Rounded MT Bold";
   height: 100%;
-  background: #eee;
+  background: #333;
   color: #333;
 }
 a{
-  color: #333;
+  color: #444;
 }
 a:hover{
   color: #fc1535;
@@ -67,20 +66,18 @@ a:hover{
   margin: 0 auto;
   background: #fff;
   height: 100%;
-  border-right: 2px solid #666;
-  border-left: 2px solid #666;
+  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
 }
-
 div#header{
   width: 100% auto;
   background: #fff;
   padding: 10px;
 }
-
 h1 a{
   display: block;
-  background: url(../images/ynfb-logo-text-white.gif) no-repeat 0 45px;
-  width: 500px;
+  background: url(../images/ynfb-logo.png) no-repeat 0 50px;
+  width: 506px;
   height: 140px;
   font-size: 4em;
   margin: 0 auto;
@@ -90,7 +87,7 @@ h1 a{
 }
 div#intro{
   padding: 0 0 0 30px;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 div#intro p{
   width: 500px;
@@ -117,17 +114,18 @@ form label{
 form input{
   float: left;
   font-size: 3em;
-  width: 330px;
+  width: 335px;
   font-family: "Arial Rounded MT Bold";
 }
 form input#submit{
   float: left;
   width: 140px;
-  background: #666;
+  background: #333;
   border: none;
   color: #fff;
-  margin-left: 20px;
-  -webkit-border-radius: 5px;
+  margin-left: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
 }
 form input#submit:hover{
   background: #fc1535;
