@@ -1,0 +1,14 @@
+<h1><%= @user.username %></h1>
+<h2>Neighbours</h2>
+<ul>
+<% @neighbours.each do |n| %>
+	<li><%= n.username %></li>
+<% end %>
+</ul>
+
+<h2>Library</h2>
+<ol>
+	<% @user.library.each do |artist| %>
+		<li><%= artist.name %></li>
+	<% end %>
+</ol>
