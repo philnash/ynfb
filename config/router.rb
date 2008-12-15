@@ -25,6 +25,7 @@
 # You can also use regular expressions, deferred routes, and many other options.
 # See merb/specs/merb/router.rb for a fairly complete usage sample.
 
+
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do
   # RESTful routes
@@ -39,6 +40,12 @@ Merb::Router.prepare do
   # clients from calling your create or destroy actions with a GET
   default_routes
   
+  match("/").
+    to(:controller => "main", :action => "index")
+
+    match("/main/results").
+      to(:controller => "main", :action => "results")
+        
   # Change this for your home page to be available at /
   # match('/').to(:controller => 'whatever', :action =>'index')
 end

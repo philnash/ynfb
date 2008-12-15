@@ -1,9 +1,15 @@
-<h1>Your Next Fav Band</h1>
+<div id="intro">
+<p>Your next favourite band is all about finding the one band that you really should be listening to, <span>but you are not. *</span></p>
 
-<form action="/main/do_it" method="post">
+<p>And all we need to find that out is your <a href="http://www.last.fm">last.fm</a> username.</p>
+
+</div>
+<form action="main/results" method="post">
 	<fieldset>
-		<label for="username">Your username</label>
-		<input type="text" name="username" id="username" />
-		<input type="submit" />
+		<label for="username">So, what's your last.fm username?</label>
+		<input type="text" name="username" id="username" value=""/>
+		<input type="submit" id="submit" value="Let's go!"/>
 	</fieldset>
 </form>
+
+<p id="asterisk">* It's OK, we won't tell anyone you didn't know about them.</p>

@@ -3,13 +3,13 @@ class Main < Application
   def index
     render
   end
-  def do_it
+  def results
     @user = Scrobbler2::User.new(params[:username])
     @user.library
     @neighbours = @user.neighbours(:limit => 20)
     @all_artists = []
     @neighbours.each do |n|
-      @all_artists << n.top_artists
+      @all_artists << n.top_artists(:period => '3month')
     end
     @all_artists.flatten!
     @the_comparer = {}
