@@ -49,7 +49,7 @@ html{
 }
 body{
   font-size: 62.5%;
-  font-family: "Arial Rounded MT Bold";
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
   height: 100%;
   background: #333;
   color: #333;
@@ -58,8 +58,9 @@ body{
 #wrapper{
   width: 550px;
   margin: 0 auto;
+  padding-bottom:20px;
   background: #fff;
-  height: 100%;
+  min-height: 100%;
   border-right: 2px solid #ddd;
   border-left: 2px solid #ddd;
 }
@@ -136,8 +137,7 @@ form input#submit:active{
   background: #fc1535;
 }
 p#asterisk{
-  padding: 0 0 0 50px;
-  margin-top: 30px;
+  padding: 30px 0 30px 50px;
   font-size: 1.125em;
 }
 
@@ -158,6 +158,9 @@ p#band{
   margin-bottom: 0.4em;
   text-align: center;
 }
+p#band a{
+  text-decoration:none;
+}
 p#drumroll{
   font-size: 1.5em;
   margin-bottom: 1.25em;
@@ -172,7 +175,30 @@ p.excite{
 }
 
 p#again{
-  margin-top: 2em;
+  margin: 2em 0;
   text-align: center;
   font-size: 1.5em;
+}
+p.error,p.error500{
+  font-size:1.5em;
+  color:#fc1535;
+}
+
+div#loading{
+  min-height:2em;
+  font-size:2em;
+  margin:2em 0 3em 50px;
+  padding:0 0 0 50px;
+  width:350px;
+  background:#fff url(/images/ajax-loader.gif) no-repeat 0 0;
+}
+p.loading{
+  margin-bottom:2em;
+}
+p#currently{
+  margin-top:1em;
+/*  text-align:center;
+  padding:20px;
+  background:#00AEF0;
+  color:#fff;*/
 }

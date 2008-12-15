@@ -1,4 +1,5 @@
 class Main < Application
+  provides :js, :html
   require 'scrobbler2'
   def index
     render
@@ -13,33 +14,25 @@ class Main < Application
     end
     @all_artists.flatten!
     @the_comparer = {}
+    urls = {}
     @all_artists.each do |a|
       if @the_comparer.has_key? a.name
         @the_comparer[a.name] += 1
       else
         @the_comparer[a.name] = 1
       end
+      urls[a.name] = a.url
     end
-    Merb.logger.info(@user.library.to_s)
     @the_comparer = @the_comparer.sort { |a,b| b[1]<=>a[1] }
     library = @user.library.collect { |a| a.name }
     @the_comparer.each do |k,v|
       unless library.include? k
-        @the_band = Scrobbler2::Artist.new(k)
+        @the_band = k
         @count = v
+        @the_url = urls[@the_band]
         break
       end
     end
     render
-  end
-end
-class Array
-  def include_name?(test)
-    result = false
-    self.each do |i|
-      if i.name == name
-        result = true
-      end
-    end
   end
 end
