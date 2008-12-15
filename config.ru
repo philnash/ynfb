@@ -1,6 +1,6 @@
 # config.ru
 
-ENV['GEM_PATH'] = '/home/pinstaller/.gems/' # your local gem home
+ENV['GEM_PATH'] = '/home/faveinstaller/.gems/' # your local gem home
 
 require 'rubygems'
  
@@ -23,10 +23,5 @@ Merb::Config.setup(:merb_root   => File.expand_path(File.dirname(__FILE__)),
 Merb.environment = "production" #Merb::Config[:environment]
 Merb.root = Merb::Config[:merb_root]
 Merb::BootLoader.run
- 
-# Uncomment if your app is mounted at a suburi
-#if prefix = ::Merb::Config[:path_prefix]
-#  use Merb::Rack::PathPrefix, prefix
-#end
  
 run Merb::Rack::Application.new
