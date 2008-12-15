@@ -24,13 +24,13 @@ class Main < Application
     @the_comparer = @the_comparer.sort { |a,b| b[1]<=>a[1] }
     library = @user.library.collect { |a| a.name }
     @the_comparer.each do |k,v|
-      # puts  Scrobbler2::Artist.new(k)
       unless library.include? k
         @the_band = Scrobbler2::Artist.new(k)
+        @count = v
         break
       end
     end
-    render 
+    render
   end
 end
 class Array
