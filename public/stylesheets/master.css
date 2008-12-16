@@ -64,6 +64,9 @@ body{
   border-right: 2px solid #ddd;
   border-left: 2px solid #ddd;
 }
+h1{
+  text-align:center;
+}
 h1 a{
   display: block;
   background: url(../images/ynfb-logo.png) no-repeat 0 60px;
@@ -197,8 +200,8 @@ p.loading{
 }
 p#currently{
   margin-top:1em;
-/*  text-align:center;
-  padding:20px;
-  background:#00AEF0;
-  color:#fff;*/
+}
+
+div#footer{
+  padding:20px 50px;
 }
