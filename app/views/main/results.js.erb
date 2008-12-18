@@ -1,0 +1,9 @@
+var results = $('<div class="results"><p id="results-intro">All righty <%= @user.username %>,<span> we looked at your top 20 neighbours, and we think your next favourite band will be:</span></p><p id="drumroll">*drumroll*</p><p id="band"><a href="<%= @the_url %>"><%= @the_band %></a></p><p class="excite">as listened to by <%= @count %> of your neighbours.</p><p id="again"><a href="/">Wanna do it all over again?</a></p></div>');
+$('#currently').remove();
+$('#loading').queue(function(){$(this).fadeOut(); $(this).dequeue(); }).queue(function(){ $(this).replaceWith(results); $(this).dequeue(); });
+$('p#again a').click(function(){
+  $('div.results').fadeOut().remove();
+  $('div#intro, p#asterisk, form').fadeIn();
+  return false;
+})
+results.fadeIn();

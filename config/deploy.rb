@@ -13,10 +13,10 @@ set :scm_passphrase, "MDSJE520" #This is your custom users password
 set :branch, "master"
 set :scm_verbose, true
 
-set :user, "nashville"
-set :domain, 'gobstopper.dreamhost.com' # Dreamhost servername where your account is located
+set :user, "utkucan"
+set :domain, 'terranova.dreamhost.com' # Dreamhost servername where your account is located
 set :project, 'ynfb' # Your application as its called in the repository
-set :application, 'merb.philnash.co.uk' # Your app's location (domain or sub-domain name as setup in panel)
+set :application, 'yournextfavband.com' # Your app's location (domain or sub-domain name as setup in panel)
 set :applicationdir, "/home/#{user}/#{application}" # The standard Dreamhost setup
 
 set :deploy_to, applicationdir
