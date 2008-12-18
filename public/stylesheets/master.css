@@ -49,7 +49,7 @@ html{
 }
 body{
   font-size: 62.5%;
-  font-family: "Arial Rounded MT Bold";
+  font-family: "Arial Rounded MT Bold", Helvetica, sans-serif;
   height: 100%;
   background: #333;
   color: #333;
