@@ -13,7 +13,7 @@ set :scm_passphrase, "MDSJE520" #This is your custom users password
 set :branch, "master"
 set :scm_verbose, true
 
-set :user, "utkucan"
+set :user, "ynfb"
 set :domain, 'terranova.dreamhost.com' # Dreamhost servername where your account is located
 set :project, 'ynfb' # Your application as its called in the repository
 set :application, 'yournextfavband.com' # Your app's location (domain or sub-domain name as setup in panel)

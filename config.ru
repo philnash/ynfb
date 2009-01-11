@@ -1,6 +1,6 @@
 # config.ru
 
-ENV['GEM_PATH'] = '/home/faveinstaller/.gems/' # your local gem home
+ENV['GEM_PATH'] = '/home/ynfb/.gems/' # your local gem home
 
 require 'rubygems'
  
