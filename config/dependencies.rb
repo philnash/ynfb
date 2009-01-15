@@ -23,6 +23,8 @@ dependency "dm-timestamps", dm_gems_version
 dependency "dm-types", dm_gems_version        
 dependency "dm-validations", dm_gems_version  
 
+dependency "activesupport"
+
 dependency "do_mysql", "0.9.10.1"
 
 dependency "hpricot", "0.6.164"
